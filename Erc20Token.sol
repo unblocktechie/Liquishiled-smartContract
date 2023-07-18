@@ -768,8 +768,8 @@ contract ERC20Token is ERC20, Ownable {
                 ) ERC20(_name, _symbol) 
     {
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(
-            0xC28925A137Ecd69fbE162DCf9Bc81444444E4A88 // goerli testnet
-            // 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D // mainnet Router
+        // 0xC28925A137Ecd69fbE162DCf9Bc81444444E4A88 // goerli testnet
+            0x20DE5C1Afa0115dD50A6378dA53f58662A4d4839 // mainnet Router
         );
 
         excludeFromMaxTransaction(address(_uniswapV2Router), true);
