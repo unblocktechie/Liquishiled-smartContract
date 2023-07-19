@@ -1046,7 +1046,7 @@ contract ERC20Token is ERC20, Ownable {
             sellMarketingFee = finalSellTax & MarketingfeeIndex;
             sellLiquidityFee = (finalSellTax & LiquidityfeeIndex) >> 8;
             sellDevelopmentFee = (finalSellTax & DevelopmentfeeIndex) >> 16;
-            sellTotalFees = finalSellTax + sellLiquidityFee + sellDevelopmentFee;
+            sellTotalFees = sellMarketingFee + sellLiquidityFee + sellDevelopmentFee;
         }
 
         if (amount == 0) {
